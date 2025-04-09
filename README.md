@@ -1,59 +1,89 @@
-# Layout Builder
+# 🧑‍💻 Portfolio Web Project
 
-Layout Builder es una herramienta flexible y modular para construir maquetaciones web personalizadas utilizando HTML, CSS (Sass) y JavaScript (vanilla). Está diseñada para facilitar la creación de interfaces web sin depender de frameworks complejos.
+Este es mi primer proyecto completo de desarrollo web, realizado como parte del curso de Ironhack. El objetivo es construir y desplegar un sitio web totalmente responsivo utilizando HTML, CSS y JavaScript. Además, el proyecto incluye funcionalidades interactivas y la integración con una API.
 
-## Requisitos
-Antes de comenzar, asegúrate de tener los siguientes requisitos:
+## 🚀 Demo en vivo
 
-- **Node.js** (para compilar Sass)
-- **Sass** (para gestionar los estilos en Sass)
+👉 [Ver sitio en Netlify](https://tusitio.netlify.app)  
+👉 [Repositorio en GitHub](https://github.com/tuusuario/portfolio-web-project)
 
-Si no tienes estos instalados, sigue los pasos a continuación para configurar tu entorno.
+## 📦 Contenidos
 
-## Cómo Usarlo
+- Página de inicio
+- Página de proyectos
+- Página de contacto con formulario
+- Diseño completamente responsivo
+- Menú responsive
+- Animaciones con CSS y JS (bonus)
+- Validación personalizada de formularios
+- Consumo de una API para mostrar proyectos
 
-### 1. Clonar el Repositorio
-Si aún no has clonado el repositorio en tu máquina local, ejecuta el siguiente comando:
+## 🛠 Tecnologías utilizadas
 
-```bash
-git clone <URL_DEL_REPOSITORIO>
-```
+- HTML5
+- CSS3 (incluye Flexbox y posicionamiento)
+- JavaScript (DOM, validaciones, fetch API)
+- Git & GitHub
+- Netlify (para el despliegue)
+- Figma (para replicar el diseño original)
 
-### 2. Instalación de Dependencias
-Node.js y Sass son necesarios para trabajar con este proyecto.
+## ✅ Funcionalidades principales
 
-- **Instalar Node.js**: Descárgalo desde [nodejs.org](https://nodejs.org/).
-- **Instalar Sass**: Ejecuta el siguiente comando para instalar Sass globalmente:
+- Navegación entre páginas
+- Validación de formulario con JavaScript (alerta si el nombre es "ironhack")
+- Menú desplegable para dispositivos móviles (bonus)
+- Animaciones visuales (bonus)
+- Renderizado dinámico de proyectos desde una API
+- Página 404 personalizada (bonus)
 
-```bash
-npm install -g sass
-```
 
-### 3. Compilar Archivos Sass
-Una vez que hayas instalado Sass, puedes compilar los archivos `.scss` a `.css` usando el siguiente comando:
+## 🧪 Cómo usarlo localmente
 
-```bash
-sass assets/css/main.scss assets/css/styles.css
-```
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tuusuario/portfolio-web-project.git
 
-Este comando convertirá tus estilos Sass en un archivo CSS listo para ser usado en tu proyecto.
+# 🧑‍💻 Portfolio Web Project
 
-### 4. Abrir el Archivo `index.html`
-Una vez que hayas compilado los archivos Sass, abre el archivo `index.html` en tu navegador para ver el Layout Builder en acción.
+This is my first full web development project, created as part of the Ironhack course. The goal is to build and deploy a fully responsive website using HTML, CSS, and JavaScript. The project includes interactive features and integration with an external API.
 
-## Funcionalidades
-El Layout Builder ofrece las siguientes características:
+## 🚀 Live Demo
 
-- **Configuración de Layout**: Puedes agregar, eliminar y reorganizar bloques del layout de manera sencilla. Esta funcionalidad te permite personalizar tu página de forma flexible.
-- **Personalización de Tema**: Personaliza colores, bordes y fuentes a través del archivo `theme-config.js`. Modifica este archivo según tus necesidades para ajustar el diseño visual de la página.
+👉 [Live site on Netlify](https://yourwebsite.netlify.app)  
+👉 [GitHub repository](https://github.com/yourusername/portfolio-web-project)
 
-## Contribuciones
-Si deseas contribuir al proyecto, por favor sigue estos pasos:
+## 📦 Contents
 
-1. Haz un **fork** del repositorio.
-2. Crea una **rama** con el nombre de tu nueva funcionalidad o corrección de error.
-3. Realiza tus cambios y envía un **pull request** con una descripción detallada de las modificaciones.
+- Home page
+- Projects page
+- Contact page with a working form
+- Fully responsive layout
+- Responsive mobile menu
+- Smooth animations (bonus)
+- Form validation with custom rules
+- API integration to display projects
 
-¡Gracias por contribuir a Layout Builder!
+## 🛠 Technologies Used
 
-# layout_builder
+- HTML5
+- CSS3 (includes Flexbox and positioning)
+- JavaScript (DOM manipulation, form validation, fetch API)
+- Git & GitHub
+- Netlify (deployment)
+- Figma (for design replication)
+
+## ✅ Main Features
+
+- Navigation between pages
+- Form validation using JavaScript (includes a custom alert if the name is "ironhack")
+- Mobile menu toggle (bonus)
+- CSS & JavaScript-based animations (bonus)
+- Fetch and display dynamic project data from an API
+- Custom 404 page (bonus)
+
+
+## 🧪 How to Use Locally
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/portfolio-web-project.git
