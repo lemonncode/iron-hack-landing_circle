@@ -8,22 +8,39 @@
   </head>
   <body>
     <main id="main-content">
+      <!--- nav -->
       <header>
         <nav class="nav">
           <div class="logo">
             <img src="assets/img/circle.svg" alt="Logo Circle" />
+            <div class="hamburger" id="hamburger">
+              <img id="+" class="icon"
+                src="./assets/img/menu-hambuerguer.svg"
+                alt="Hamburger Menu"
+              />
+              <img id="X" class="icon open"
+                src="./assets/img/close-x.svg"
+                alt="Hamburger Menu"
+              />
+            </div>
+            
           </div>
           <div class="links">
-         
-            <div><h3><a href="index.html">Home</a></h3></div>
-            <div><h3><a href="projects.html">Projects</a></h3></div>
-            <div><h3><a href="services.html">Services</a></h3></div>
-          
+            <div>
+              <h3><a href="index.html">Home</a></h3>
+            </div>
+            <div>
+              <h3><a href="projects.html">Projects</a></h3>
+            </div>
+            <div>
+              <h3><a href="services.html">Services</a></h3>
+            </div>
           </div>
+
           <div class="contact">Contact us</div>
         </nav>
       </header>
-
+      <!--content-->
       <div id="page">
         <section id="hero">
           <div class="left">
@@ -81,11 +98,15 @@
           <div class="projects">
             <!-- card 1 -->
             <div class="project-card">
-              <img src="assets/img/1.jpg" alt="Screenshot of Project 1" class="project-card__image" />
+              <img
+                src="assets/img/1.jpg"
+                alt="Screenshot of Project 1"
+                class="project-card__image"
+              />
               <div class="project-card__content">
                 <h3 class="project-card__title">Simplify</h3>
                 <p class="project-card__description">
-                UI Design & App Development
+                  UI Design & App Development
                 </p>
                 <a href="#" class="project-card__cta">Learn more</a>
               </div>
@@ -93,24 +114,28 @@
 
             <!-- card 2 -->
             <div class="project-card">
-              <img src="assets/img/2.jpg" alt="Screenshot of Project 2" class="project-card__image" />
+              <img
+                src="assets/img/2.jpg"
+                alt="Screenshot of Project 2"
+                class="project-card__image"
+              />
               <div class="project-card__content">
                 <h3 class="project-card__title">Dashcoin</h3>
-                <p class="project-card__description">
-                 Web Development
-                </p>
+                <p class="project-card__description">Web Development</p>
                 <a href="#" class="project-card__cta">Learn more</a>
               </div>
             </div>
 
             <!-- card 3 -->
             <div class="project-card">
-              <img src="assets/img/3.jpg" alt="Screenshot of Project 3" class="project-card__image" />
+              <img
+                src="assets/img/3.jpg"
+                alt="Screenshot of Project 3"
+                class="project-card__image"
+              />
               <div class="project-card__content">
                 <h3 class="project-card__title">Vectorify</h3>
-                <p class="project-card__description">
-                  User Experience Design
-                </p>
+                <p class="project-card__description">User Experience Design</p>
                 <a href="#" class="project-card__cta">Learn more</a>
               </div>
             </div>
@@ -120,14 +145,29 @@
         <section id="our-clients">
           <div class="clients-container">
             <div class="emojis">
-              <img class="emoji" src="assets/img/memoji-1.png" alt="Client emoji 1" />
-              <img class="emoji" src="assets/img/memoji-3.png" alt="Client emoji 2" />
+              <img
+                class="emoji"
+                src="assets/img/memoji-1.png"
+                alt="Client emoji 1"
+              />
+              <img
+                class="emoji"
+                src="assets/img/memoji-3.png"
+                alt="Client emoji 2"
+              />
             </div>
             <div class="info">
               <h4>Hear What Our Clients Have to Say</h4>
-              <h3>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</h3>
+              <h3>
+                “Circle helped us through every stage of our startup. We really
+                enjoyed working with you.”
+              </h3>
               <div class="avatar">
-                <img class="profile" src="assets/img/profile.png" alt="Kristin Watson" />
+                <img
+                  class="profile"
+                  src="assets/img/profile.png"
+                  alt="Kristin Watson"
+                />
                 <div>
                   <h5>Kristin Watson</h5>
                   <p>Booking.com</p>
@@ -135,8 +175,16 @@
               </div>
             </div>
             <div class="emojis">
-              <img class="emoji" src="assets/img/memoji-2.png" alt="Client emoji 3" />
-              <img class="emoji" src="assets/img/memoji-4.png" alt="Client emoji 4" />
+              <img
+                class="emoji"
+                src="assets/img/memoji-2.png"
+                alt="Client emoji 3"
+              />
+              <img
+                class="emoji"
+                src="assets/img/memoji-4.png"
+                alt="Client emoji 4"
+              />
             </div>
           </div>
         </section>
@@ -147,12 +195,17 @@
             <!-- card 1 -->
             <div class="project-card">
               <div class="bkg">
-                <img src="assets/img/1.svg" alt="Service 1 icon" class="project-card__image" />
+                <img
+                  src="assets/img/1.svg"
+                  alt="Service 1 icon"
+                  class="project-card__image"
+                />
               </div>
               <div class="project-card__content">
                 <h3 class="project-card__title">Project Name</h3>
                 <p class="project-card__description">
-                  Brief description of the project goes here. Clean, modern and responsive.
+                  Brief description of the project goes here. Clean, modern and
+                  responsive.
                 </p>
                 <a href="#" class="project-card__cta">View project</a>
               </div>
@@ -161,12 +214,17 @@
             <!-- card 2 -->
             <div class="project-card">
               <div class="bkg">
-                <img src="assets/img/2.svg" alt="Service 2 icon" class="project-card__image" />
+                <img
+                  src="assets/img/2.svg"
+                  alt="Service 2 icon"
+                  class="project-card__image"
+                />
               </div>
               <div class="project-card__content">
                 <h3 class="project-card__title">Project Name</h3>
                 <p class="project-card__description">
-                  Brief description of the project goes here. Clean, modern and responsive.
+                  Brief description of the project goes here. Clean, modern and
+                  responsive.
                 </p>
                 <a href="#" class="project-card__cta">View project</a>
               </div>
@@ -175,12 +233,17 @@
             <!-- card 3 -->
             <div class="project-card">
               <div class="bkg">
-                <img src="assets/img/3.svg" alt="Service 3 icon" class="project-card__image" />
+                <img
+                  src="assets/img/3.svg"
+                  alt="Service 3 icon"
+                  class="project-card__image"
+                />
               </div>
               <div class="project-card__content">
                 <h3 class="project-card__title">Project Name</h3>
                 <p class="project-card__description">
-                  Brief description of the project goes here. Clean, modern and responsive.
+                  Brief description of the project goes here. Clean, modern and
+                  responsive.
                 </p>
                 <a href="#" class="project-card__cta">View project</a>
               </div>
@@ -188,41 +251,37 @@
           </div>
         </section>
       </div>
-      
+      <!-- footer -->
       <footer id="footer">
-        
-                <section id="suscribe">
-                  <div class="container">
-                    <h2>Do you have any questions?</h2>
-                    <p>Let us help you!</p>
-                    <form class="form-group" action="#" method="post">
-                      <div class="input-wrapper">
-                        
-                        <span class="icon">📧</span>
-                        <input
-                          type="email"
-                          id="email"
-                          name="email"
-                          placeholder="Enter your email"
-                          required
-                        />
-                      </div>
-                      <button type="submit">Subscribe</button>
-                    </form>
-                  </div>
-                </section>
+        <section id="suscribe">
+          <div class="boxis">
+            <h2>Do you have any questions?</h2>
+            <p>Let us help you!</p>
+            <form class="form-group" action="#" method="post">
+              <div class="input-wrapper">
+                <span class="icon">📧</span>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </section>
         <div class="container">
           <div>
             <div class="logo">
               <img src="assets/img/circle.svg" alt="Logo Circle" />
             </div>
             <div class="address">
-              <p>
-                2972 Westheimer Rd. Santa Ana, Illinois 85486 
-              </p>
+              <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
             </div>
           </div>
-          <div class="links">
+          <div class="footer-links">
             <a>Team</a>
             <a>Services</a>
             <a>About us</a>
@@ -235,6 +294,7 @@
       </footer>
     </main>
 
-    <script type="module" src="assets/js/app.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/app.js"></script>
   </body>
 </html>
