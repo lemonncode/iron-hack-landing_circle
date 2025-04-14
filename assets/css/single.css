@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: white;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.project-header {
+  margin-bottom: 2rem;
+}
+.project-header .back-button {
+  text-decoration: none;
+  color: #4e54c8;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.project-header .back-button:hover {
+  text-decoration: underline;
+}
+
+.project-container {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  margin: 0 auto;
+}
+.project-container .project-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4e54c8;
+  margin-bottom: 1rem;
+}
+.project-container .project-image-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 2rem 0;
+}
+.project-container .project-image-wrapper .project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project-container .project-meta {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 0.5rem 0;
+}
+.project-container .project-meta strong {
+  color: #333;
+}
+.project-container .project-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+}

@@ -2,7 +2,7 @@
 @import "variables";
 /* colores*/
 $background-color: #f4f6fc;
-$b-color: #072ac8;
+$b-color: #4e54c8;
 $c-color: #43d2ff;
 $d-color: #a2d6f9;
 $e-color: #d1edff;
@@ -41,9 +41,8 @@ $secondary-button-color: #2ecc71;
   }
   #page {
     padding: 10px 120px;
-    @media (max-width: $medium)  {
+    @media (max-width: $medium) {
       padding: 28px 22px;
-      
     }
   }
 }
@@ -62,8 +61,8 @@ body {
 
   @media (max-width: $medium) {
     flex-direction: column;
-    background-color: $e-color;
-    box-shadow: 0px 10px 19px 0px rgba(41,46,71,0.17);
+    background-color: $h-color;
+    box-shadow: 0px 10px 19px 0px rgba(41, 46, 71, 0.17);
     padding: 10px 28px;
   }
   .logo {
@@ -83,7 +82,6 @@ body {
       }
       .icon {
         height: 42px;
-       
       }
     }
   }
@@ -105,7 +103,6 @@ body {
     display: none; // Ocultamos el menú de enlaces por defecto en pantallas pequeñas
     flex-direction: column;
 
-    background-color: $e-color;
     width: 100%;
 
     align-items: center;
@@ -142,9 +139,11 @@ body {
   justify-content: space-between;
   height: 70vh;
   width: 100%;
-     @media(max-width:$medium){
-      height: 280px;
-     }
+  margin-top: 84px;
+  @media (max-width: $medium) {
+    height: 280px;
+    margin-top: 0px;
+  }
   .left {
     display: flex;
     flex-direction: column;
@@ -153,7 +152,7 @@ body {
 
     .title {
       font-size: 2.2rem;
-      @media(max-width:$medium){
+      @media (max-width: $medium) {
         font-size: 1.2rem;
       }
 
@@ -181,9 +180,9 @@ body {
 
   .right {
     transform: translateX(-30%);
-       @media(max-width:$medium){
-      display: none; 
-      }
+    @media (max-width: $medium) {
+      display: none;
+    }
     .hero-wrapper {
       position: relative;
       width: 100%;
@@ -238,11 +237,13 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-     @media(max-width:$medium){
-      padding: 4px 16px;
-      gap: 34px;
-     }
-
+  margin-top: 72px;
+  @media (max-width: $medium) {
+    padding: 4px 16px;
+    gap: 34px;
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
 
   .logo {
     width: 130px;
@@ -261,10 +262,9 @@ body {
 #recent-projects {
   padding: 4rem 2rem;
   background-color: #f5f8ff;
-     @media(max-width:$medium){
-      padding: 0px;
-     }
-
+  @media (max-width: $medium) {
+    padding: 0px;
+  }
 
   h3 {
     font-size: 2rem;
@@ -277,12 +277,11 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 45px;
-       @media(max-width:$medium){
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 45px;
-       }
-
+    @media (max-width: $medium) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 45px;
+    }
 
     .project-card {
       display: flex;
@@ -303,15 +302,14 @@ body {
         min-width: 400px;
         height: 200px;
         object-fit: cover;
-        @media(max-width:$medium){
-       height: auto;
-       }
-        
+        @media (max-width: $medium) {
+          height: auto;
+        }
       }
 
       &__content {
         padding: 3.5rem 1.5rem;
-        @media(max-width:$medium){
+        @media (max-width: $medium) {
           padding: 16px;
         }
       }
@@ -351,9 +349,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @media(max-width:$medium){
-    margin: 0px;
-    padding: 16px;
+    @media (max-width: $medium) {
+      margin: 0px;
+      padding: 16px;
     }
   }
   .emojis {
@@ -363,7 +361,7 @@ body {
 
     .emoji {
       height: 98px;
-      @media(max-width:$medium){
+      @media (max-width: $medium) {
         display: none;
       }
     }
@@ -375,14 +373,14 @@ body {
     h4 {
       font-size: 2rem;
       color: #f4f6fc;
-      @media(max-width: $medium){
+      @media (max-width: $medium) {
         font-size: 1.4rem;
       }
     }
     h3 {
       font-size: 1.4rem;
       color: $j-color;
-      @media(max-width:$medium){
+      @media (max-width: $medium) {
         font-size: 1rem;
         padding: 0px 10px;
         font-weight: 200;
@@ -394,7 +392,7 @@ body {
       align-items: center;
       margin-top: 120px;
       gap: 15px;
-      @media(max-width:$medium){
+      @media (max-width: $medium) {
         margin-top: 24px;
         margin-bottom: 24px;
       }
@@ -421,11 +419,9 @@ body {
   }
 }
 #our-services {
-
   background-color: #f5f8ff;
- 
 
-h3 {
+  h3 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 2rem;
@@ -436,7 +432,7 @@ h3 {
     flex-direction: row;
     justify-content: center;
     gap: 45px;
-    @media(max-width:$medium){
+    @media (max-width: $medium) {
       flex-direction: column;
       align-items: center;
     }
@@ -512,7 +508,7 @@ h3 {
       display: flex;
       flex-direction: column;
       align-items: center;
-      @media(max-width:$medium){
+      @media (max-width: $medium) {
         margin: 0px;
         justify-content: center;
       }
@@ -530,7 +526,7 @@ h3 {
         align-items: center;
         gap: 1rem;
         flex-wrap: wrap;
-        @media(max-width:$medium){
+        @media (max-width: $medium) {
           justify-content: center;
         }
 
@@ -577,9 +573,8 @@ h3 {
     color: $g-color;
     gap: 30%;
     justify-content: space-between;
-    @media(max-width:$medium){
+    @media (max-width: $medium) {
       padding: 22px;
-      min-height: 250px;
       display: block;
       margin-bottom: 80px;
     }
@@ -591,8 +586,8 @@ h3 {
   .footer-links {
     display: flex;
     flex-wrap: wrap;
-    @media(max-width:$medium){
-      gap: 4px
+    @media (max-width: $medium) {
+      gap: 4px;
     }
     a {
       width: 170px;

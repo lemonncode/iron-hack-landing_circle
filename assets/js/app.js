@@ -20,7 +20,8 @@ fetch(url)
         <div class="project-card__content">
           <h3 class="project-card__title">${project.name}</h3>
           <p class="project-card__description">${project.description}</p>
-          <a href="project.html?id=${project.uuid}" class="project-card__cta">Learn More</a>
+          <a href="./single-project/project.html?id=${project.uuid}" class="project-card__cta">Learn More</a>
+          
         </div>
       `;
       container.appendChild(card);

@@ -10,7 +10,7 @@
   color: #6b708d;
 }
 #main-content a:hover {
-  color: #072ac8;
+  color: #4e54c8;
 }
 #main-content #page {
   padding: 10px 120px;
@@ -37,7 +37,7 @@ body {
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
-    background-color: #d1edff;
+    background-color: #f2f4fc;
     box-shadow: 0px 10px 19px 0px rgba(41, 46, 71, 0.17);
     padding: 10px 28px;
   }
@@ -78,7 +78,6 @@ body {
   .links {
     display: none;
     flex-direction: column;
-    background-color: #d1edff;
     width: 100%;
     align-items: center;
     gap: 10px;
@@ -93,11 +92,11 @@ body {
   font-weight: 200;
 }
 .links h3:hover {
-  color: #072ac8;
+  color: #4e54c8;
 }
 
 .contact {
-  background-color: #072ac8;
+  background-color: #4e54c8;
   color: #f4f6fc;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -106,7 +105,7 @@ body {
   transition: background-color 0.3s ease;
 }
 .contact:hover {
-  background-color: #052097;
+  background-color: #363cad;
 }
 @media (max-width: 768px) {
   .contact {
@@ -123,10 +122,12 @@ body {
   justify-content: space-between;
   height: 70vh;
   width: 100%;
+  margin-top: 84px;
 }
 @media (max-width: 768px) {
   #hero {
     height: 280px;
+    margin-top: 0px;
   }
 }
 #hero .left {
@@ -155,7 +156,7 @@ body {
   display: flex;
 }
 #hero .left .get .contact {
-  background-color: #072ac8;
+  background-color: #4e54c8;
   color: #f4f6fc;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -164,7 +165,7 @@ body {
   transition: background-color 0.3s ease;
 }
 #hero .left .get .contact:hover {
-  background-color: #052097;
+  background-color: #363cad;
 }
 #hero .right {
   transform: translateX(-30%);
@@ -222,11 +223,14 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 72px;
 }
 @media (max-width: 768px) {
   #brands {
     padding: 4px 16px;
     gap: 34px;
+    margin-top: 42px;
+    margin-bottom: 42px;
   }
 }
 #brands .logo {
@@ -542,7 +546,7 @@ body {
   color: #7b7b7b;
 }
 #footer #suscribe .boxis .form-group button {
-  background-color: #072ac8;
+  background-color: #4e54c8;
   color: #f4f6fc;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -551,7 +555,7 @@ body {
   transition: background-color 0.3s ease;
 }
 #footer #suscribe .boxis .form-group button:hover {
-  background-color: #052097;
+  background-color: #363cad;
 }
 #footer .container {
   display: flex;
@@ -563,7 +567,6 @@ body {
 @media (max-width: 768px) {
   #footer .container {
     padding: 22px;
-    min-height: 250px;
     display: block;
     margin-bottom: 80px;
   }
