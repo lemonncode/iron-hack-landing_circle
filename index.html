@@ -7,23 +7,33 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <main id="main-content">
+    <!-- Loader -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+
+    <main id="main-content" style="display: none">
       <!--- nav -->
       <header>
         <nav class="nav">
           <div class="logo">
-            <img src="assets/img/circle.svg" alt="Logo Circle" />
+            <a href="index.html">
+              <img src="assets/img/circle.svg" alt="Logo Circle" />
+            </a>
             <div class="hamburger" id="hamburger">
-              <img id="+" class="icon"
-                src="./assets/img/menu-hambuerguer.svg"
+              <img
+                id="+"
+                class="icon"
+                src="./assets/img/menu-hamburguer.svg"
                 alt="Hamburger Menu"
               />
-              <img id="X" class="icon open"
+              <img
+                id="X"
+                class="icon open"
                 src="./assets/img/close-x.svg"
                 alt="Hamburger Menu"
               />
             </div>
-            
           </div>
           <div class="links">
             <div>
@@ -37,7 +47,9 @@
             </div>
           </div>
 
-          <div class="contact">Contact us</div>
+          <div class="contact">
+            <a class="link-contact" href="services.html">Contact us</a>
+          </div>
         </nav>
       </header>
       <!--content-->
@@ -54,7 +66,9 @@
               </p>
             </div>
             <div class="get">
-              <div class="contact">Get in touch</div>
+              <div class="contact">
+                <a class="link-contact" href="services.html">Get in touh</a>
+              </div>
             </div>
           </div>
 
@@ -95,9 +109,7 @@
 
         <section id="recent-projects">
           <h3>Recent Projects</h3>
-          <div class="projects">
-          
-          </div>
+          <div class="projects"></div>
         </section>
 
         <section id="our-clients">
@@ -162,7 +174,8 @@
               <div class="project-card__content">
                 <h3 class="project-card__title">User Interface Design</h3>
                 <p class="project-card__description">
-                 Circle provides you with a stunning user interface design that is accessible to everyone.
+                  Circle provides you with a stunning user interface design that
+                  is accessible to everyone.
                 </p>
                 <a href="#" class="project-card__cta">Learn more</a>
               </div>
@@ -180,7 +193,8 @@
               <div class="project-card__content">
                 <h3 class="project-card__title">User Experience Design</h3>
                 <p class="project-card__description">
-                 Circle always focuses on delivering the best user experience to your customers.
+                  Circle always focuses on delivering the best user experience
+                  to your customers.
                 </p>
                 <a href="#" class="project-card__cta">Learn more</a>
               </div>
@@ -198,7 +212,8 @@
               <div class="project-card__content">
                 <h3 class="project-card__title">Application Development</h3>
                 <p class="project-card__description">
-                  We develop high-quality mobile and web applications using the latest technology stack.
+                  We develop high-quality mobile and web applications using the
+                  latest technology stack.
                 </p>
                 <a href="#" class="project-card__cta">Learn more</a>
               </div>
@@ -211,6 +226,7 @@
         <section id="suscribe">
           <div class="boxis">
             <h2>Do you have any questions?</h2>
+       
             <p>Let us help you!</p>
             <form class="form-group" action="#" method="post">
               <div class="input-wrapper">
@@ -245,9 +261,9 @@
             <a>Privacy Policy</a>
           </div>
         </div>
-        <!-- Footer content here -->
+       
       </footer>
-    </main>
+      </main>
 
     <script type="module" src="./assets/js/script.js"></script>
     <script type="module" src="./assets/js/app.js"></script>

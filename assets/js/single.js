@@ -27,13 +27,15 @@ fetch(
 
       <div class="project-container">
         <h1 class="project-title">${project.name}</h1>
-
+        <div class="project-box">
+        
+        <p class="project-text">${project.description}</p>
+        <p class="project-meta"><strong>Completed on:</strong> ${project.completed_on}</p>
+        </div>
         <div class="project-image-wrapper">
           <img src="${project.image}" alt="${project.name}" class="project-image" />
         </div>
 
-        <p class="project-meta"><strong>Completed on:</strong> ${project.completed_on}</p>
-        <p class="project-text">${project.description}</p>
         <p class="project-text">${project.content}</p>
         <p class="project-meta"><strong>Technologies:</strong> ${techList}</p>
       </div>

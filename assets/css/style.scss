@@ -16,7 +16,6 @@ $secondary-button-color: #2ecc71;
 
 @mixin button-style {
   background-color: $b-color;
-  color: $background-color;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -51,7 +50,40 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $b-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.4s ease;
 
+  &.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.loader {
+  border: 10px solid $d-color;
+  border-top: 10px solid $c-color;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s ease-in-out infinite;
+  box-shadow: 0 0 20px $c-color;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 .nav {
   display: flex;
   flex-direction: row;
@@ -125,6 +157,11 @@ body {
 }
 .contact {
   @include button-style; // si usás mixins
+  .link-contact {
+    color: $background-color !important;
+    font-weight: 200 !important;
+  }
+
   @media (max-width: $medium) {
     display: none;
   }
@@ -149,6 +186,7 @@ body {
     flex-direction: column;
     width: 530px;
     gap: 1.5rem; // mejora el espaciado entre elementos
+    
 
     .title {
       font-size: 2.2rem;
@@ -180,7 +218,8 @@ body {
 
   .right {
     transform: translateX(-30%);
-    @media (max-width: $medium) {
+    
+    @media (max-width: $large) {
       display: none;
     }
     .hero-wrapper {
@@ -239,6 +278,8 @@ body {
   justify-content: space-between;
   margin-top: 72px;
   @media (max-width: $medium) {
+    flex-direction: column;
+    align-items: center;
     padding: 4px 16px;
     gap: 34px;
     margin-top: 42px;
@@ -563,6 +604,7 @@ body {
 
         button {
           @include button-style; // si usás mixins
+          color: white;
         }
       }
     }
@@ -576,7 +618,7 @@ body {
     @media (max-width: $medium) {
       padding: 22px;
       display: block;
-      margin-bottom: 80px;
+      
     }
     .address {
       font-size: 0.8rem;

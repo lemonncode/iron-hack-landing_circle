@@ -1,3 +1,14 @@
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader-wrapper");
+
+  loader.classList.add("hide");
+
+  setTimeout(() => {
+    loader.style.display = "none";
+    document.getElementById("main-content").style.display = "block";
+  }, 400); // espera que termine el fade-out
+});
+
 const url =
   "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects";
 

@@ -27,6 +27,43 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #4e54c8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+.loader-wrapper.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader {
+  border: 10px solid #a2d6f9;
+  border-top: 10px solid #43d2ff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s ease-in-out infinite;
+  box-shadow: 0 0 20px #43d2ff;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .nav {
   display: flex;
   flex-direction: row;
@@ -97,7 +134,6 @@ body {
 
 .contact {
   background-color: #4e54c8;
-  color: #f4f6fc;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -106,6 +142,10 @@ body {
 }
 .contact:hover {
   background-color: #363cad;
+}
+.contact .link-contact {
+  color: #f4f6fc !important;
+  font-weight: 200 !important;
 }
 @media (max-width: 768px) {
   .contact {
@@ -157,7 +197,6 @@ body {
 }
 #hero .left .get .contact {
   background-color: #4e54c8;
-  color: #f4f6fc;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -170,7 +209,7 @@ body {
 #hero .right {
   transform: translateX(-30%);
 }
-@media (max-width: 768px) {
+@media (max-width: 1190px) {
   #hero .right {
     display: none;
   }
@@ -227,6 +266,8 @@ body {
 }
 @media (max-width: 768px) {
   #brands {
+    flex-direction: column;
+    align-items: center;
     padding: 4px 16px;
     gap: 34px;
     margin-top: 42px;
@@ -547,12 +588,12 @@ body {
 }
 #footer #suscribe .boxis .form-group button {
   background-color: #4e54c8;
-  color: #f4f6fc;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  color: white;
 }
 #footer #suscribe .boxis .form-group button:hover {
   background-color: #363cad;
@@ -568,7 +609,6 @@ body {
   #footer .container {
     padding: 22px;
     display: block;
-    margin-bottom: 80px;
   }
 }
 #footer .container .address {

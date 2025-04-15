@@ -3,6 +3,7 @@ $background-color: #f7f9fc;
 $input-bg: #e9ebf0;
 $text-color: #1d1d1f;
 $border-radius: 4px;
+@import "variables";
 
 
 #page{
@@ -14,6 +15,9 @@ $border-radius: 4px;
         padding: 2rem;
         background-color: white;
         border-radius: $border-radius;
+        @media(max-width:$medium){
+            margin: 16px;
+        }
         
         h1 {
             font-size: 2rem;
@@ -36,7 +40,9 @@ $border-radius: 4px;
         .form-row {
             display: flex;
             gap: 1rem;
-            
+            @media(max-width:$medium){
+                flex-direction: column;
+            }
             label {
                 flex: 1;
             }

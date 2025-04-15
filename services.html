@@ -8,20 +8,49 @@
     <link rel="stylesheet" href="assets/css/form.css" />
   </head>
   <body>
-    <main id="main-content">
-    <header>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+
+    <main id="main-content" style="display: none">
+      <!--- nav -->
+      <header>
         <nav class="nav">
           <div class="logo">
-            <img src="assets/img/circle.svg" alt="Logo Circle" />
+            <a href="index.html">
+              <img src="assets/img/circle.svg" alt="Logo Circle" />
+            </a>
+            <div class="hamburger" id="hamburger">
+              <img
+                id="+"
+                class="icon"
+                src="./assets/img/menu-hamburguer.svg"
+                alt="Hamburger Menu"
+              />
+              <img
+                id="X"
+                class="icon open"
+                src="./assets/img/close-x.svg"
+                alt="Hamburger Menu"
+              />
+            </div>
           </div>
           <div class="links">
-         
-            <div><h3><a href="index.html">Home</a></h3></div>
-            <div><h3><a href="projects.html">Projects</a></h3></div>
-            <div><h3><a href="services.html">Services</a></h3></div>
-          
+            <div>
+              <h3><a href="index.html">Home</a></h3>
+            </div>
+            <div>
+              <h3><a href="projects.html">Projects</a></h3>
+            </div>
+            <div>
+              <h3><a href="services.html">Services</a></h3>
+            </div>
           </div>
-          <div class="contact">Contact us</div>
+
+          <div class="contact">
+            <a class="link-contact" href="services.html">Contact us</a>
+          </div>
         </nav>
       </header>
 
@@ -55,10 +84,12 @@
         </div>
       </div>
 
+      <!-- footer -->
       <footer id="footer">
         <section id="suscribe">
-          <div class="container">
+          <div class="boxis">
             <h2>Do you have any questions?</h2>
+
             <p>Let us help you!</p>
             <form class="form-group" action="#" method="post">
               <div class="input-wrapper">
@@ -84,7 +115,7 @@
               <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
             </div>
           </div>
-          <div class="links">
+          <div class="footer-links">
             <a>Team</a>
             <a>Services</a>
             <a>About us</a>
@@ -93,10 +124,10 @@
             <a>Privacy Policy</a>
           </div>
         </div>
-        <!-- Footer content here -->
       </footer>
     </main>
 
-    <script type="module" src="assets/js/app.js"></script>
+   <script type="module" src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/app.js"></script>
   </body>
 </html>

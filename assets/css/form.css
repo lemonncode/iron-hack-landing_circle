@@ -5,6 +5,11 @@
   background-color: white;
   border-radius: 4px;
 }
+@media (max-width: 768px) {
+  #page .contact-container {
+    margin: 16px;
+  }
+}
 #page .contact-container h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -23,6 +28,11 @@
 #page .contact-form .form-row {
   display: flex;
   gap: 1rem;
+}
+@media (max-width: 768px) {
+  #page .contact-form .form-row {
+    flex-direction: column;
+  }
 }
 #page .contact-form .form-row label {
   flex: 1;

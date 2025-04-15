@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import "variables";
 
 // Variables
 $primary-color: #4e54c8;
 $secondary-color: #8f94fb;
 $text-color: #333;
 $light-gray: #f5f5f5;
-$font-stack: 'Helvetica Neue', sans-serif;
+$font-stack: "Helvetica Neue", sans-serif;
 
 // Mixins
 @mixin card-shadow {
@@ -13,53 +14,69 @@ $font-stack: 'Helvetica Neue', sans-serif;
 }
 
 body {
-  font-family: $font-stack;
-  background-color: white;
-  color: $text-color;
-  margin: 0;
-  padding: 0;
-}
-
-main {
-  padding: 2rem;
-  background-color: #f5f5f5;
-}
-
-.project-header {
-  margin-bottom: 2rem;
-
-  .back-button {
-    text-decoration: none;
-    color: $primary-color;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-
-    &:hover {
-      text-decoration: underline;
+  #main {
+    background-color: #f5f5f5;
+    padding: 10px 120px;
+    @media (max-width: $medium) {
+      padding: 28px 22px;
     }
   }
-}
+  #project-details {
+    padding: 4rem 2rem;
+    margin: auto;
+    @media(max-width:$medium){
+      padding: 0px;
+    }
 
-.project-container {
+    .project-header {
+      margin: 30px 60px;
+      @media(max-width:$medium){
+        margin: 45px 2px;
+      }
+
+      .back-button {
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+   .project-container {
   background-color: $light-gray;
-  border-radius: 20px;
+  border-radius: 2px;
   padding: 2rem;
   @include card-shadow;
-  max-width: 960px;
+  max-width: 1400px;
   margin: 0 auto;
 
   .project-title {
     font-size: 2.5rem;
     font-weight: 700;
     color: $primary-color;
-    margin-bottom: 1rem;
+    margin: 0;
+  }
+
+  .project-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    @media(max-width:$medium){
+      gap: 4px;
+    }
   }
 
   .project-image-wrapper {
     overflow: hidden;
-    border-radius: 20px;
-    margin: 2rem 0;
+    border-radius: 2px;
+    margin: 1.5rem 0;
 
     .project-image {
       width: 100%;
@@ -82,5 +99,59 @@ main {
     font-size: 1rem;
     line-height: 1.6;
     margin: 1rem 0;
+    @media(max-width:$medium){
+      margin: 0px;
+    }
+  }
+
+  // 🔽 Mobile responsive styles
+  @media screen and (max-width: 768px) {
+    padding: 1.5rem;
+
+    .project-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .project-box {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .project-meta {
+      font-size: 0.85rem;
+      text-align: left;
+    }
+
+    .project-text {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    .project-image-wrapper {
+      margin: 1rem 0;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 1rem;
+
+    .project-title {
+      font-size: 1.6rem;
+    }
+
+    .project-text {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+  }
+
+  #recent-projects {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5 !important;
   }
 }
