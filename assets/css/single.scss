@@ -29,9 +29,9 @@ body {
     }
 
     .project-header {
-      margin: 30px 60px;
+      margin: 30px 0px;
       @media(max-width:$medium){
-        margin: 45px 2px;
+        margin: 32px 16px;
       }
 
       .back-button {
@@ -58,8 +58,8 @@ body {
   .project-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: $primary-color;
-    margin: 0;
+    color:  #292e47;;
+    margin: 10px 0;
   }
 
   .project-box {
